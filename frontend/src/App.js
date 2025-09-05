@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/signup", { email });
+      const response = await axios.post("https://email-github-updates.vercel.app/signup", { email });
       setMessage(response.data.message);
       setError('');
     } catch (err) {
